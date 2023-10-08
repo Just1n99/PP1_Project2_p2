@@ -30,12 +30,38 @@
             border-radius: 4px;
             resize: vertical;
             margin-left: 15px;
-            float: right;
             resize: vertical;
         }
-        label {
-            display: inline-block;
-            font-size: 25px;
+        #search2 {
+            width: 70px;
+        }
+        #add {
+            margin-left: 5px;
+            border: 1px solid green;
+            border-radius: 4px;
+            padding: 5px;
+            background-color: green;
+            color: white;
+            width: 50px;
+        }
+        .rows1 {
+            display: flex;
+            font-weight: bold;
+        }
+        #num {
+            width: 60px;
+        }
+        #level {
+            width: 130px;
+        }
+        #word {
+            width: 270px;
+        }
+        #meaning {
+            width: 290px;
+        }
+        #date {
+            width: 240px;
         }
     </style>
 </head>
@@ -44,9 +70,8 @@
         <div class="container">
             <div id="top">
                 <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-                    <img src="/Users/justinyu/Desktop/PP1_Project2_p2/image/vocab.png" class="bd-placeholder-img" id="img1">
                     <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-                    <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+                        <img src="/Users/justinyu/Desktop/PP1_Project2_p2/image/vocab.png" class="bd-placeholder-img" id="img1">
                     <span class="fs-4">My vocabulary</span>
                     </a>
         
@@ -58,16 +83,31 @@
                     </ul>
                 </header>
             </div>
+            
             <div class="middle">
-                    <label for="select">Word List</label>
-                    <input type="text" id="search2" name="search2" placeholder="Search"></input>
-                    <input type="text" id="search" name="search" placeholder="word"></input>
+                <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+                    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                    <span class="fs-4">Word List</span>
+                    </a>
+        
                     <select name="vocab" id="vocab">
                         <option value="select">Select Level</option>
                         <option value="level1">1</option>
                         <option value="level2">2</option>
                         <option value="level3">3</option>
                     </select>
+                    <input type="text" id="search" name="search" placeholder="word"></input>
+                    <input type="text" id="search2" name="search2" placeholder="Search"></input>
+                    <button type="button" id="add">Add</button>
+                </header>
+            </div>
+            <div class="rows1">
+                <div class="col-sm-4 themed-grid-col" id="num">#</div>
+                <div class="col-sm-4 themed-grid-col" id="level">Level</div>
+                <div class="col-sm-4 themed-grid-col" id="word">Word</div>
+                <div class="col-sm-4 themed-grid-col" id="meaning">Meaning</div>
+                <div class="col-sm-4 themed-grid-col" id="date">Date</div>
+                <div class="col-sm-4 themed-grid-col" id="menu">Menu</div>
             </div>
         </div>
 </body>
