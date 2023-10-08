@@ -22,21 +22,20 @@
             width: 50px;
         }
         .middle {
-            margin-top: 60px;
-            display: flex;
-            text-align: center;
-        }
-        #Select {
-            margin-left: 45%;
-        }
-        #wordSearch {
-            margin-left: 20px;
+            margin-top: 50px;
         }
         input[type=text], select, textarea {
             padding: 5px;
             border: 1px solid #ccc;
             border-radius: 4px;
             resize: vertical;
+            margin-left: 15px;
+            float: right;
+            resize: vertical;
+        }
+        label {
+            display: inline-block;
+            font-size: 25px;
         }
     </style>
 </head>
@@ -60,20 +59,15 @@
                 </header>
             </div>
             <div class="middle">
-                <div id="header">
-                    <h3>Word List</h3>
-                </div>
-                <div id="Select">
+                    <label for="select">Word List</label>
+                    <input type="text" id="search2" name="search2" placeholder="Search"></input>
+                    <input type="text" id="search" name="search" placeholder="word"></input>
                     <select name="vocab" id="vocab">
                         <option value="select">Select Level</option>
                         <option value="level1">1</option>
                         <option value="level2">2</option>
                         <option value="level3">3</option>
                     </select>
-                </div>
-                <div id="wordSearch">
-                    <input type="text" id="search" name="search" placeholder="word"></input>
-                </div>
             </div>
         </div>
 </body>
