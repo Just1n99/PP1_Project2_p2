@@ -4,36 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="/Users/justinyu/Desktop/PP1_Project2_p2/bootstrap.min.css" rel="stylesheet">
+    <link href="/Users/justinyu/Desktop/PP1_Project2_p2/my.css" rel="stylesheet">
 
     <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
+        .container {
+            xmin-width: 900px;
+        }
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+        #img1{
+            height: 50px;
+            width: 50px;
+        }
+        .middle {
+            margin-top: 60px;
+            display: flex;
+            text-align: center;
+        }
+        #Select {
+            margin-left: 45%;
+        }
+        #wordSearch {
+            margin-left: 20px;
+        }
+        input[type=text], select, textarea {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
     </style>
-    <link href="my.css" rel="stylesheet">
 </head>
 <body>
     <main>
         <div class="container">
-          <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-              <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-              <span class="fs-4">My vocabulary</span>
-            </a>
-  
-            <ul class="nav nav-pills">
-              <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-            </ul>
-          </header>
+            <div id="top">
+                <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+                    <img src="/Users/justinyu/Desktop/PP1_Project2_p2/image/vocab.png" class="bd-placeholder-img" id="img1">
+                    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+                    <span class="fs-4">My vocabulary</span>
+                    </a>
+        
+                    <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="" class="nav-link active" aria-current="page">Home</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">NoStyle</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Example</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">About</a></li>
+                    </ul>
+                </header>
+            </div>
+            <div class="middle">
+                <div id="header">
+                    <h3>Word List</h3>
+                </div>
+                <div id="Select">
+                    <select name="vocab" id="vocab">
+                        <option value="select">Select Level</option>
+                        <option value="level1">1</option>
+                        <option value="level2">2</option>
+                        <option value="level3">3</option>
+                    </select>
+                </div>
+                <div id="wordSearch">
+                    <input type="text" id="search" name="search" placeholder="word"></input>
+                </div>
+            </div>
         </div>
 </body>
 </html>
