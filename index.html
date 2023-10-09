@@ -7,9 +7,6 @@
     <link href="/Users/justinyu/Desktop/PP1_Project2_p2/my.css" rel="stylesheet">
 
     <style>
-        .container {
-            xmin-width: 900px;
-        }
         .bd-placeholder-img {
             font-size: 1.125rem;
             text-anchor: middle;
@@ -22,8 +19,8 @@
             width: 50px;
         }
         #img2, #img3 {
-            height: 2%;
-            width: 2%;
+            height: 20px;
+            width: 20px;
         }
         .middle {
             margin-top: 50px;
@@ -54,19 +51,19 @@
             padding-left: 3px;
         }
         #num {
-            width: 60px;
+            width: 5%; 
         }
         #level {
-            width: 130px;
+            width: 12%; 
         }
         #word {
-            width: 270px;
+            width: 25%; 
         }
         #meaning {
-            width: 290px;
+            width: 25%; 
         }
         #date {
-            width: 240px;
+            width: 27%; 
         }
         .next {
             text-align: center;
@@ -108,7 +105,13 @@
             padding-left: 3px;
             border: 1px solid rgb(218, 218, 218);
         }
+
     </style>
+    <script>
+        function Add() {
+            window.location.href = "file:///Users/justinyu/Desktop/PP1_Project2_p2/add.html"
+        }
+    </script>
 </head>
 <body>
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -158,7 +161,7 @@
                     </select>
                     <input type="text" id="search" name="search" placeholder="word"></input>
                     <input type="text" id="search2" name="search2" placeholder="Search"></input>
-                    <button type="button" id="add">Add</button>
+                    <input type="button" value="Add" id="add" onclick="Add()" />
                 </header>
             </div>
             <div class="rows1">
@@ -182,8 +185,8 @@
                 <div class="col-sm-4 themed-grid-col" id="num">9</div>
                 <div class="col-sm-4 themed-grid-col" id="level">*</div>
                 <div class="col-sm-4 themed-grid-col" id="word">persistent</div>
-                <div class="col-sm-4 themed-grid-col" id="meaning">관리자, 감독관</div>
-                <div class="col-sm-4 themed-grid-col" id="date">2022-09-028</div>
+                <div class="col-sm-4 themed-grid-col" id="meaning">끊임없는, 계속되는</div>
+                <div class="col-sm-4 themed-grid-col" id="date">2022-09-28</div>
                 <img src="/Users/justinyu/Desktop/PP1_Project2_p2/image/pencil.png" class="bd-placeholder-img" id="img2">
                 <img src="/Users/justinyu/Desktop/PP1_Project2_p2/image/garbage.png" class="bd-placeholder-img" id="img3">
             </div>
@@ -191,7 +194,7 @@
                 <div class="col-sm-4 themed-grid-col" id="num">8</div>
                 <div class="col-sm-4 themed-grid-col" id="level">**</div>
                 <div class="col-sm-4 themed-grid-col" id="word">maintenance</div>
-                <div class="col-sm-4 themed-grid-col" id="meaning">관리자, 감독관</div>
+                <div class="col-sm-4 themed-grid-col" id="meaning">유지보수</div>
                 <div class="col-sm-4 themed-grid-col" id="date">2022-09-27</div>
                 <img src="/Users/justinyu/Desktop/PP1_Project2_p2/image/pencil.png" class="bd-placeholder-img" id="img2">
                 <img src="/Users/justinyu/Desktop/PP1_Project2_p2/image/garbage.png" class="bd-placeholder-img" id="img3">
@@ -200,7 +203,7 @@
                 <div class="col-sm-4 themed-grid-col" id="num">5</div>
                 <div class="col-sm-4 themed-grid-col" id="level">**</div>
                 <div class="col-sm-4 themed-grid-col" id="word">accuse</div>
-                <div class="col-sm-4 themed-grid-col" id="meaning">관리자, 감독관</div>
+                <div class="col-sm-4 themed-grid-col" id="meaning">미난하다, 고소하다</div>
                 <div class="col-sm-4 themed-grid-col" id="date">2022-09-26</div>
                 <img src="/Users/justinyu/Desktop/PP1_Project2_p2/image/pencil.png" class="bd-placeholder-img" id="img2">
                 <img src="/Users/justinyu/Desktop/PP1_Project2_p2/image/garbage.png" class="bd-placeholder-img" id="img3">
@@ -209,7 +212,7 @@
                 <div class="col-sm-4 themed-grid-col" id="num">4</div>
                 <div class="col-sm-4 themed-grid-col" id="level">***</div>
                 <div class="col-sm-4 themed-grid-col" id="word">electric</div>
-                <div class="col-sm-4 themed-grid-col" id="meaning">관리자, 감독관</div>
+                <div class="col-sm-4 themed-grid-col" id="meaning">전기의, 전기를 생산하는</div>
                 <div class="col-sm-4 themed-grid-col" id="date">2022-09-25</div>
                 <img src="/Users/justinyu/Desktop/PP1_Project2_p2/image/pencil.png" class="bd-placeholder-img" id="img2">
                 <img src="/Users/justinyu/Desktop/PP1_Project2_p2/image/garbage.png" class="bd-placeholder-img" id="img3">
@@ -218,7 +221,7 @@
                 <div class="col-sm-4 themed-grid-col" id="num">3</div>
                 <div class="col-sm-4 themed-grid-col" id="level">***</div>
                 <div class="col-sm-4 themed-grid-col" id="word">probationary</div>
-                <div class="col-sm-4 themed-grid-col" id="meaning">관리자, 감독관</div>
+                <div class="col-sm-4 themed-grid-col" id="meaning">견습중의, 가채용의</div>
                 <div class="col-sm-4 themed-grid-col" id="date">2022-09-24</div>
                 <img src="/Users/justinyu/Desktop/PP1_Project2_p2/image/pencil.png" class="bd-placeholder-img" id="img2">
                 <img src="/Users/justinyu/Desktop/PP1_Project2_p2/image/garbage.png" class="bd-placeholder-img" id="img3">
@@ -227,7 +230,7 @@
                 <div class="col-sm-4 themed-grid-col" id="num">2</div>
                 <div class="col-sm-4 themed-grid-col" id="level">*</div>
                 <div class="col-sm-4 themed-grid-col" id="word">indicate</div>
-                <div class="col-sm-4 themed-grid-col" id="meaning">관리자, 감독관</div>
+                <div class="col-sm-4 themed-grid-col" id="meaning">나타내다, 보여주다</div>
                 <div class="col-sm-4 themed-grid-col" id="date">2022-09-20</div>
                 <img src="/Users/justinyu/Desktop/PP1_Project2_p2/image/pencil.png" class="bd-placeholder-img" id="img2">
                 <img src="/Users/justinyu/Desktop/PP1_Project2_p2/image/garbage.png" class="bd-placeholder-img" id="img3">
@@ -236,7 +239,7 @@
                 <div class="col-sm-4 themed-grid-col" id="num">1</div>
                 <div class="col-sm-4 themed-grid-col" id="level">*</div>
                 <div class="col-sm-4 themed-grid-col" id="word">legitimate</div>
-                <div class="col-sm-4 themed-grid-col" id="meaning">관리자, 감독관</div>
+                <div class="col-sm-4 themed-grid-col" id="meaning">합법적인, 적법한</div>
                 <div class="col-sm-4 themed-grid-col" id="date">2022-09-18</div>
                 <img src="/Users/justinyu/Desktop/PP1_Project2_p2/image/pencil.png" class="bd-placeholder-img" id="img2">
                 <img src="/Users/justinyu/Desktop/PP1_Project2_p2/image/garbage.png" class="bd-placeholder-img" id="img3">
