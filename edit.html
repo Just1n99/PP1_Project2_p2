@@ -31,6 +31,12 @@
           color: white;
           width: 10%;
         }
+        #level, #word, #meaning {
+            width: 50%;
+        }
+        textarea {
+            height: 150px;
+        }
     </style>
     <script>
         function editConfirm() {
@@ -62,7 +68,7 @@
                 <input type="text" id="word" name="word" value="superintendent"><br><br>
     
                 <h4>Meaning: </h4>
-                <input type="text" id="meaning" name="meaning" value="관리자, 감독관"><br><br>
+                <textarea id="meaning" name="meaning">관리자, 감독관</textarea><br><br>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
                     <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold" onclick="editConfirm()">Edit</button>
                     <button type="button" class="btn btn-outline-light btn-lg px-4" onclick="Previous()">Back</button>

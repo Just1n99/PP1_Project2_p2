@@ -6,6 +6,15 @@
     <title>Document</title>
     <link href="bootstrap.min.css" rel="stylesheet">
     <link href="my.css" rel="stylesheet">
+    <style>
+      #level, #word, #meaning {
+            width: 50%;
+        }
+        textarea {
+            width: 50%;
+            height: 150px;
+        }
+    </style>
     <script>
       function CheckValue() {
         var level = document.form1.level.value;
@@ -47,7 +56,7 @@
               <input type="text" id="word" name="word" placeholder="Enter Word"><br><br>
   
               <h4>Meaning: </h4>
-              <input type="text" id="meaning" name="meaning" placeholder="Enter Definition"><br><br>
+              <textarea id="meaning" name="meaning" placeholder="Enter Definition"></textarea><br><br>
               <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
                   <button type="button" value="submit" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold" onclick="CheckValue()">Submit</button>
                   <button type="button" class="btn btn-outline-light btn-lg px-4" onclick="Previous()">Back</button>
