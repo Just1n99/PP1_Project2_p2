@@ -7,9 +7,9 @@
     <link href="bootstrap.min.css" rel="stylesheet">
     <link href="my.css" rel="stylesheet">
     <style>
-      body {
-        background-color: antiquewhite;
-      }
+        body  {
+            background-color: azure;
+        }
         .bd-placeholder-img {
             font-size: 1.125rem;
             text-anchor: middle;
@@ -79,7 +79,7 @@
             <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
                 <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
                     <img src="/image/vocab.png" class="bd-placeholder-img" id="img1">
-                <span class="fs-4">My vocabulary - Add Page -</span>
+                <span class="fs-4">My vocabulary - Edit Page -</span>
                 </a>
     
             </header>
@@ -88,13 +88,13 @@
         <div id="main">
             <form name="form1" method="post" action="form_ok.php">
                 <label for="level">Level</label><br>
-                <input type="text" id="level" name="level" placeholder="Enter Level"><br><br>
+                <input type="text" id="level" name="level" value="3"><br><br>
                 
                 <label for="word">Word</label><br>
-                <input type="text" id="word" name="word" placeholder="Enter Word"><br><br>
+                <input type="text" id="word" name="word" value="superintendent"><br><br>
 
                 <label for="meaning">Meaning</label><br>
-                <input type="text" id="meaning" name="meaning" placeholder="Enter Definition"><br><br>
+                <input type="text" id="meaning" name="meaning" value="관리자, 감독관"><br><br>
                 <input type="button" value="Back" id="back" onclick="Previous()" />
                 <input type="button" value="Submit" id="submit" onclick="CheckValue()" />
             </form>
