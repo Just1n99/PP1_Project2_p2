@@ -20,29 +20,18 @@
         }
     </style>
     <script>
-      function CheckValue() {
-        var level = document.form1.level.value;
-        var word = document.form1.word.value;
-        var meaning = document.form1.meaning.value;
+      function Delete() {
+        var del = confirm("Do you wish to delete this item?");
 
-        if(level == "") {
-            alert("Input Level");
-            return false;
+        if(del) {
+            alert("Item successfully deleted!");
         }
-
-        if(word == "") {
-            alert("Input Word");
-            return false;
+        else {
         }
-        if(meaning == "") {
-            alert("Input Meaning");
-            return false;
-        }
-        document.form1.submit();
       }
 
-        function Previous() {
-          window.location.href = "https://clinquant-bunny-102843.netlify.app/index.html"
+        function Edit() {
+          window.location.href = "https://clinquant-bunny-102843.netlify.app/edit.html"
         }
     </script>
 </head>

@@ -24,37 +24,28 @@
         #main {
             text-align: center;
         }
-        #back, #submit {
+        #back, #edit {
           border: 1px solid rgb(46, 97, 192);
           border-radius: 4px;
           background-color: rgb(46, 97, 192);
           color: white;
+          width: 10%;
         }
     </style>
     <script>
-      function CheckValue() {
-        var level = document.form1.level.value;
-        var word = document.form1.word.value;
-        var meaning = document.form1.meaning.value;
+        function editConfirm() {
+            var ce = confirm("Do you save changes?");
 
-        if(level == "") {
-            alert("Input Level");
-            return false;
-        }
+            if(ce) {
+                alert("You have successfully edited");
+            }
+            else {
 
-        if(word == "") {
-            alert("Input Word");
-            return false;
+            }
         }
-        if(meaning == "") {
-            alert("Input Meaning");
-            return false;
-        }
-        document.form1.submit();
-      }
 
         function Previous() {
-          window.location.href = "https://clinquant-bunny-102843.netlify.app/index.html"
+            window.location.href = "https://clinquant-bunny-102843.netlify.app/view.html"
         }
     </script>
 </head>
@@ -96,7 +87,7 @@
                 <label for="meaning">Meaning</label><br>
                 <input type="text" id="meaning" name="meaning" value="관리자, 감독관"><br><br>
                 <input type="button" value="Back" id="back" onclick="Previous()" />
-                <input type="button" value="Submit" id="submit" onclick="CheckValue()" />
+                <input type="button" value="Edit" id="edit" onclick="editConfirm()" />
             </form>
         </div>
     </div>
