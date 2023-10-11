@@ -43,10 +43,27 @@
     </style>
     <script>
         function editConfirm() {
+            var level = document.form1.level.value;
+            var word = document.form1.word.value;
+            var meaning = document.form1.meaning.value;
+            if(level == "") {
+                alert("Input Level");
+                return false;
+            }
+
+            if(word == "") {
+                alert("Input Word");
+                return false;
+            }
+            if(meaning == "") {
+                alert("Input Meaning");
+                return false;
+            }
             var ce = confirm("Do you save changes?");
 
             if(ce) {
                 alert("You have successfully edited");
+                window.location.href = "https://steady-madeleine-f45371.netlify.app/view.html"
             }
             else {
 
@@ -59,6 +76,7 @@
     </script>
 </head>
 <body>
+    <form name="form1" method="post" action="form_ok.php">
         <div class="bg-dark text-secondary px-4 py-5 text-center">
             <div class="py-5">
                 <h1 class="display-5 fw-bold text-white">- Edit Page -</h1>
@@ -85,5 +103,6 @@
                 </div>
             </div>
         </div>
+    </form>
 </body>
 </html>
