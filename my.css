@@ -81,7 +81,7 @@ input[type=text], select, textarea {
 }
 .rows2, .rows4, .rows6, .rows8 {
     display: flex;
-    background-color: #5f6062;
+    background-color: #384a70;
     color: white;
     padding-top: 9px;
     padding-bottom: 9px;
@@ -90,7 +90,7 @@ input[type=text], select, textarea {
 }
 .rows3, .rows5, .rows7, .rows9 {
     display: flex;
-    background-color: #5f6062;
+    background-color: #384a70;
     color: white;
     padding-top: 9px;
     padding-bottom: 9px;
