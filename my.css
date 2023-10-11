@@ -28,12 +28,6 @@ input[type=text], select, textarea {
 }
 #add {
     margin-left: 5px;
-    border: 1px solid green;
-    border-radius: 4px;
-    padding: 5px;
-    background-color: green;
-    color: white;
-    width: 50px;
 }
 .rows1 {
     display: flex;
@@ -55,6 +49,10 @@ input[type=text], select, textarea {
 }
 #date {
     width: 27%; 
+}
+#menu {
+    text-align: left;
+    width: 6%
 }
 .next {
     text-align: center;
@@ -83,7 +81,8 @@ input[type=text], select, textarea {
 }
 .rows2, .rows4, .rows6, .rows8 {
     display: flex;
-    background-color: rgb(241, 238, 238);
+    background-color: #5f6062;
+    color: white;
     padding-top: 9px;
     padding-bottom: 9px;
     padding-left: 3px;
@@ -91,16 +90,21 @@ input[type=text], select, textarea {
 }
 .rows3, .rows5, .rows7, .rows9 {
     display: flex;
+    background-color: #5f6062;
+    color: white;
     padding-top: 9px;
     padding-bottom: 9px;
     padding-left: 3px;
     border: 1px solid rgb(218, 218, 218);
 }
 a {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 a:hover {
     text-decoration: none;
     color: black;
+}
+#inc {
+    color: white;
 }
