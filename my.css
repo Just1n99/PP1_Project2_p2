@@ -59,25 +59,11 @@ input[type=text], select, textarea {
     margin-top: 10px;
 }
 .next button {
-    background-color: white;
-    border: 1px solid rgb(230, 230, 230);
-    color: rgb(0, 145, 255);
     font-size: 13px;
 }
 #page1, #page2, #page3 {
     width: 30px;
     height: 33px;
-}
-#left, #right {
-    height: 33px;
-}
-#left {
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
-}
-#right {
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
 }
 .rows2, .rows4, .rows6, .rows8 {
     display: flex;
